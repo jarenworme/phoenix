@@ -10,6 +10,8 @@ import Dropdown from "../UI/molecules/Dropdown";
 import DualChipSelect from "../UI/molecules/DualChipSelect";
 import ProductCard from "../UI/molecules/ProductCard";
 import NavigationButtons from "../UI/molecules/BottomNavigation";
+import ErrorText from "../UI/atoms/ErrorText";
+import ErrorBox from "../UI/atoms/ErrorBox";
 
 // notes:
 // continue button here takes you to select products
@@ -58,6 +60,14 @@ export default function UploadDocuments () {
                         price="$xxx.xx" 
                         description="description :  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Temporibus rem beatae dolorem quae aut quisquam autem, libero sapiente exercitationem numquam." 
                         cardState={cardState1}
+                    />
+                    <ErrorText
+                        testId="testID"
+                        label="Example Error Text like 'email is not in a recognizable format'"
+                    />
+                    <ErrorBox
+                        testId="testID"
+                        label="Example Error Popup like 'you can only select two products'"
                     />
                 </VStack>
                 <VStack alignItems="stretch">
